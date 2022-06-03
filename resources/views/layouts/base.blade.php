@@ -71,11 +71,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <ul class="navbar-nav">
             <li class="nav-item active h4">
-              <a class="nav-link" href="{{ route('admin.home') }}">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ route('homepage') }}">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active h4">
                 @auth
-                    <a class="nav-link" href="{{ route('admin.posts.index') }}">Listing guest</a>
+                    <a class="nav-link" href="{{ route('admin.posts.index') }}">Listing</a>
                 @endauth
                 @guest
                     <a class="nav-link" href="{{ route('admin.posts.index') }}">Listing guest</a>
