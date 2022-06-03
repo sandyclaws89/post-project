@@ -80,6 +80,12 @@
             @endif
 
             <div class="content">
+                @guest
+                 non sei loggato
+                @endguest
+                @auth
+                sei loggato
+                @endauth
                 <div class="title m-b-md">
                     Laravel
                 </div>
@@ -98,3 +104,10 @@
         </div>
     </body>
 </html>
+
+@guest
+                 non sei loggato
+                @endguest
+                @auth
+                sei loggato
+                @endauth
